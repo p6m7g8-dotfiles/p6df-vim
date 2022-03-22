@@ -1,4 +1,3 @@
-
 ######################################################################
 #<
 #
@@ -33,6 +32,7 @@ p6df::modules::vim::external::brew() {
 ######################################################################
 p6df::modules::vim::home::symlink() {
 
-  ln -fs $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-vim/share/vimrc .vimrc
-  ln -fs $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-vim/share/vim .vim
+  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-vim/share/vimrc" ".vimrc"
+  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-vim/share/vim" ".vim"
+  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-vim/share/.viminfo" ".viminfo"
 }
