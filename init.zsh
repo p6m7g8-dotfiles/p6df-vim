@@ -28,6 +28,8 @@ p6df::modules::vim::external::brew() {
 #
 # Function: p6df::modules::vim::home::symlink()
 #
+#  Depends:	 p6_file
+#  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
 p6df::modules::vim::home::symlink() {
