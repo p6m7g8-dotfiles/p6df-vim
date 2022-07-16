@@ -29,8 +29,9 @@ p6df::modules::vim::init() {
 }
 
 p6df::modules::vim::aliases::init() {
+  local dir="$1"
 
-  p6_alias "vim" "vim -i $__p6_dir/share/.viminfo"
+  p6_alias "vim" "vim -i $dir/share/.viminfo"
 }
 
 ######################################################################
