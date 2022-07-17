@@ -44,9 +44,12 @@
 
 #### p6df-vim/init.zsh:
 
+- p6df::modules::vim::aliases::init(dir)
 - p6df::modules::vim::deps()
 - p6df::modules::vim::external::brew()
 - p6df::modules::vim::home::symlink()
+- p6df::modules::vim::init()
+
 
 
 ## Author

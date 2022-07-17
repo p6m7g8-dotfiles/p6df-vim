@@ -23,11 +23,28 @@ p6df::modules::vim::external::brew() {
   brew install vim
 }
 
+######################################################################
+#<
+#
+# Function: p6df::modules::vim::init()
+#
+#>
+######################################################################
 p6df::modules::vim::init() {
 
   p6df::modules::vim::aliases::init
 }
 
+######################################################################
+#<
+#
+# Function: p6df::modules::vim::aliases::init(dir)
+#
+#  Args:
+#	dir -
+#
+#>
+######################################################################
 p6df::modules::vim::aliases::init() {
   local dir="$1"
 
@@ -39,7 +56,6 @@ p6df::modules::vim::aliases::init() {
 #
 # Function: p6df::modules::vim::home::symlink()
 #
-#  Depends:	 p6_file
 #  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
