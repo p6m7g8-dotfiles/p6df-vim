@@ -1,3 +1,4 @@
+# shellcheck shell=bash
 ######################################################################
 #<
 #
@@ -21,6 +22,8 @@ p6df::modules::vim::deps() {
 p6df::modules::vim::external::brew() {
 
   brew install vim
+
+  p6_return_void
 }
 
 ######################################################################
@@ -33,6 +36,8 @@ p6df::modules::vim::external::brew() {
 p6df::modules::vim::init() {
 
   p6df::modules::vim::aliases::init
+
+  p6_return_void
 }
 
 ######################################################################
@@ -49,6 +54,8 @@ p6df::modules::vim::aliases::init() {
   local dir="$1"
 
   p6_alias "vim" "vim -i $dir/share/.viminfo"
+
+  p6_return_void
 }
 
 ######################################################################
@@ -63,4 +70,6 @@ p6df::modules::vim::home::symlink() {
 
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-vim/share/vimrc" ".vimrc"
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-vim/share/vim" ".vim"
+
+  p6_return_void
 }
