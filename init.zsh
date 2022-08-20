@@ -29,20 +29,6 @@ p6df::modules::vim::external::brew() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::vim::init()
-#
-#>
-######################################################################
-p6df::modules::vim::init() {
-
-  p6df::modules::vim::aliases::init
-
-  p6_return_void
-}
-
-######################################################################
-#<
-#
 # Function: p6df::modules::vim::aliases::init(dir)
 #
 #  Args:
