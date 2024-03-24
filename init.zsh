@@ -21,7 +21,7 @@ p6df::modules::vim::deps() {
 ######################################################################
 p6df::modules::vim::external::brew() {
 
-  brew install vim
+  p6df::modules::homebrew::cli::brew::install vim
 
   p6_return_void
 }
