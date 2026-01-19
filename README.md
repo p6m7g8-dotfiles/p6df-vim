@@ -21,6 +21,7 @@
 ### Aliases
 
 - vim IS vim -i $dir/share/.viminfo
+
 ### Functions
 
 ## p6df-vim
