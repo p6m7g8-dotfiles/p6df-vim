@@ -37,7 +37,8 @@ p6df::modules::vim::external::brew() {
 #>
 ######################################################################
 p6df::modules::vim::aliases::init() {
-  local dir="$1"
+  local _module="$1"
+  local dir="$2"
 
   p6_alias "vim" "vim -i $dir/share/.viminfo"
 
