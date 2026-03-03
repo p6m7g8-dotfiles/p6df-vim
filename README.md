@@ -42,7 +42,7 @@ TODO: Add a short summary of this module.
 
 - `p6df::modules::vim::aliases::init(dir)`
   - Args:
-    - dir - 
+    - dir -
 - `p6df::modules::vim::deps()`
 - `p6df::modules::vim::external::brew()`
 - `p6df::modules::vim::home::symlink()`
