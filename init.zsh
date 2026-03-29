@@ -15,11 +15,11 @@ p6df::modules::vim::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::vim::external::brew()
+# Function: p6df::modules::vim::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::vim::external::brew() {
+p6df::modules::vim::external::brews() {
 
   p6df::core::homebrew::cli::brew::install vim
 
