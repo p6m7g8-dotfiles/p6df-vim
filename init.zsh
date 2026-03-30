@@ -47,12 +47,12 @@ p6df::modules::vim::aliases::init() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::vim::home::symlink()
+# Function: p6df::modules::vim::home::symlinks()
 #
 #  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
-p6df::modules::vim::home::symlink() {
+p6df::modules::vim::home::symlinks() {
 
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-vim/share/vimrc" "$HOME/.vimrc"
   p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-vim/share/vim" "$HOME/.vim"
