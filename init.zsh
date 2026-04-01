@@ -74,6 +74,6 @@ p6df::modules::vim::home::symlinks() {
 ######################################################################
 p6df::modules::vim::profile::mod() {
 
-  p6_return_words 'vim' '$VIMINIT'
+  p6_return_words 'vim' "$VIMINIT"
 }
 
