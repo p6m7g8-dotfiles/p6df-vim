@@ -37,6 +37,7 @@ p6df::modules::vim::external::brews() {
 #>
 ######################################################################
 p6df::modules::vim::aliases::init() {
+  local _module="$1"
   local dir="$1"
 
   p6_alias "vim" "vim -i $dir/share/.viminfo"
@@ -49,7 +50,7 @@ p6df::modules::vim::aliases::init() {
 #
 # Function: p6df::modules::vim::home::symlinks()
 #
-#  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
+#  Environment:	 HOME P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
 p6df::modules::vim::home::symlinks() {
@@ -59,3 +60,20 @@ p6df::modules::vim::home::symlinks() {
 
   p6_return_void
 }
+
+######################################################################
+#<
+#
+# Function: words vim $VIMINIT = p6df::modules::vim::profile::mod()
+#
+#  Returns:
+#	words - vim $VIMINIT
+#
+#  Environment:	 VIMINIT
+#>
+######################################################################
+p6df::modules::vim::profile::mod() {
+
+  p6_return_words 'vim' '$VIMINIT'
+}
+
