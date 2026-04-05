@@ -15,9 +15,10 @@ p6df::modules::vim::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::vim::aliases::init(dir)
+# Function: p6df::modules::vim::aliases::init(_module, dir)
 #
 #  Args:
+#	_module -
 #	dir -
 #
 #>
@@ -64,10 +65,10 @@ p6df::modules::vim::external::brews() {
 ######################################################################
 #<
 #
-# Function: words vim $VIMINIT = p6df::modules::vim::profile::mod()
+# Function: words vim = p6df::modules::vim::profile::mod()
 #
 #  Returns:
-#	words - vim $VIMINIT
+#	words - vim
 #
 #  Environment:	 VIMINIT
 #>

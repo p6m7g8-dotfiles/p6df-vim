@@ -40,12 +40,14 @@ TODO: Add a short summary of this module.
 
 ##### p6df-vim/init.zsh
 
-- `p6df::modules::vim::aliases::init(dir)`
+- `p6df::modules::vim::aliases::init(_module, dir)`
   - Args:
-    - dir -
+    - _module
+    - dir
 - `p6df::modules::vim::deps()`
-- `p6df::modules::vim::external::brew()`
-- `p6df::modules::vim::home::symlink()`
+- `p6df::modules::vim::external::brews()`
+- `p6df::modules::vim::home::symlinks()`
+- `words vim = p6df::modules::vim::profile::mod()`
 
 ## Hierarchy
 
